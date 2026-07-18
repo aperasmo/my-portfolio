@@ -1,4 +1,4 @@
-# Allan Erasmo — Portfolio
+# Allan P. Erasmo — Portfolio
 
 ### A clean, single-page, dependency-free developer portfolio, built to be scanned in under a minute ✨.
 
