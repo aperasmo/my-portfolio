@@ -17,7 +17,7 @@ View the live site → [aperasmo.github.io/my-portfolio](https://aperasmo.github
 - Fully responsive, keyboard-accessible, no build step.
 - Loads fast — no bundler, no CDN dependencies, nothing to compile.
 
-## Why no framework
+## Why no framework?
 
 This is a single page that rarely changes shape. React/Vite/Tailwind would add a build step and a dependency tree for something three files already do well. Keeping it framework-free means anyone can clone it, open `index.html`, and understand the entire codebase in a few minutes.
 
