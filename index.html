@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allan Erasmo - Full-Stack, Backend &amp; AI Engineer</title>
+  <meta name="description" content="Allan Erasmo - 13+ years enterprise backend engineer now building full-stack, AI-native systems. Master of Software Engineering graduate targeting roles in New Zealand." />
+  <meta name="color-scheme" content="dark light" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Allan Erasmo - Full-Stack, Backend & AI Engineer" />
+  <meta property="og:description" content="13+ years enterprise backend engineer, now building full-stack, AI-native systems." />
+
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#top" class="brand">AE</a>
+      <nav class="nav" aria-label="Section navigation">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-photo" id="hero-photo" aria-hidden="false">
+          <span class="hero-photo-fallback">AE</span>
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow">Full-Stack · Backend · AI Engineer</p>
+          <h1>Allan Erasmo</h1>
+          <p class="hero-tagline">
+            13+ years in enterprise backend engineering - evolving from VB6 and MSSQL, through C# and MySQL,
+            now rebuilding across the modern full-stack and AI-native stack.
+          </p>
+          <p class="hero-sub">
+            Master of Software Engineering graduate, targeting mid-level Full-Stack, Backend, Cloud, or AI Engineering roles.
+            <span class="loc">📍 Auckland, New Zealand</span>
+          </p>
+          <div class="hero-links">
+            <a class="btn btn-primary" href="mailto:allanperasmo@gmail.com">Email me</a>
+            <a class="btn btn-ghost" href="https://github.com/aperasmo" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/allanperasmo/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="tel:+64225426295">+64 22 542 6295</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills &amp; Stack</h2>
+      <p class="section-sub">What I build with today - not an exhaustive history.</p>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="tag-list">
+            <li>Python</li><li>FastAPI</li><li>C#</li><li>SQLAlchemy</li>
+            <li>PostgreSQL</li><li>MySQL</li><li>MSSQL</li><li>JWT Auth</li>
+            <li>REST APIs</li><li>Go</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="tag-list">
+            <li>React</li><li>TypeScript</li><li>JavaScript</li>
+            <li>Vite</li><li>Tailwind CSS</li><li>Recharts</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; DevOps</h3>
+          <ul class="tag-list">
+            <li>AWS EC2</li><li>Docker</li><li>Docker Compose</li>
+            <li>GitHub Actions CI/CD</li><li>Nginx</li><li>Let's Encrypt</li><li>Linux</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI / ML Tooling</h3>
+          <ul class="tag-list">
+            <li>TensorFlow / Keras</li><li>CNN Ensembles</li><li>OpenCV</li>
+            <li>Grad-CAM Explainability</li><li>LLM Integration</li>
+            <li>Tauri</li><li>Rust</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">Two things I shipped, not prototyped.</p>
+
+      <div class="projects-grid">
+
+        <!-- GlaucomaAI -->
+        <article class="project-card" data-accent="glaucoma">
+          <div class="project-head">
+            <img class="project-icon" src="assets/icons/glaucoma-ai-logo-dark.png" alt="" />
+            <div>
+              <h3>GlaucomaAI</h3>
+              <p class="project-tagline">AI-powered glaucoma pre-screening system - live in production</p>
+            </div>
+            <span class="badge badge-live">Live</span>
+          </div>
+
+          <ul class="project-highlights">
+						  
+            <li>Deployed and running at <strong>glaucoma-ai-screening.com</strong>, HTTPS, AWS EC2, Docker, automated GitHub Actions CI/CD deployment</li>
+            <li>Built a full-stack platform: FastAPI and PostgreSQL backend, React and Vite frontend, plus a Go microservice for PDF report generation</li>
+            <li>Engineered a three-CNN ensemble (EfficientNetB0, VGG16, EfficientNetV2), achieving <strong>AUC 0.93</strong>, <strong>85% sensitivity</strong> on a locked 415-image test set</li>
+            <li>Compared four LLMs (GPT-4o, GPT-4o-mini, GPT-OSS 120B, Gemini) for automated referral letter generation across 180 letters</li>				
+            <li>Accepted for camera-ready publication at <strong>IEEE MIPR 2026</strong> (first author) - built solo in one university trimester</li>
+          </ul>
+
+          <div class="project-gallery" id="gallery-glaucoma-ai" hidden></div>
+
+          <div class="project-links">
+            <a class="btn btn-primary btn-sm" href="https://glaucoma-ai-screening.com" target="_blank" rel="noopener">View Live Site</a>
+          </div>
+        </article>
+
+        <!-- AI Git Assistant -->
+        <article class="project-card" data-accent="gitassist">
+          <div class="project-head">
+            <img class="project-icon" src="assets/icons/ai-git-assistant-icon.png" alt="" />
+            <div>
+              <h3>AI Git Assistant</h3>
+              <p class="project-tagline">Plain-English Git client for safer desktop workflows</p>
+            </div>
+            <span class="badge badge-version">v0.7.7</span>
+          </div>
+
+          <ul class="project-highlights">
+			<li>Shipped a versioned Windows desktop installer with GitHub Releases support for real end users</li>
+			<li>Built with Tauri, React, Rust, and a PyInstaller-packaged Python FastAPI sidecar, so users do not need Python or Node installed</li>
+			<li>Designed approval-first Git workflows where every write action is planned, reviewed, and explicitly confirmed before execution</li>
+			<li>Added guided recovery for common Git roadblocks, including upstream tracking, authentication, merge conflicts, ignored files, and release preparation</li>
+			<li>Expanded the release workflow toward multi-platform delivery, with Windows and Linux, then MAC later on, installer builds and draft-release asset management</li>
+			<li>Iterated from prototype to installable product across seven development phases, with documented releases, testing, and packaging improvements</li>
+          </ul>
+
+          <div class="project-gallery" id="gallery-ai-git-assistant" hidden></div>
+
+          <div class="project-links">
+            <a class="btn btn-primary btn-sm" href="https://github.com/aperasmo/ai-git-assistant" target="_blank" rel="noopener">View Code</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/aperasmo/ai-git-assistant-app/releases" target="_blank" rel="noopener">Releases</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= BACKGROUND ================= -->
+    <section id="background" class="section">
+      <h2 class="section-title">Background</h2>
+
+      <div class="timeline">
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <p class="timeline-label">VB6 · MSSQL</p>
+          <p class="timeline-sub">Where I started</p>
+        </div>
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <p class="timeline-label">C# · MySQL</p>
+          <p class="timeline-sub">First deliberate pivot, 2018</p>
+        </div>
+        <div class="timeline-node timeline-node-active">
+          <span class="timeline-dot"></span>
+          <p class="timeline-label">Full-Stack · AI-Native</p>
+          <p class="timeline-sub">Second pivot, in progress</p>
+        </div>
+      </div>
+
+      <p class="background-copy">
+        13+ years in enterprise backend engineering, combining hands-on development, systems architecture,
+        and team leadership. At iRipple, I architected and maintained production POS systems with 90%+
+        uptime for retail clients nationwide, including one major client in Malaysia, and led two
+        development teams (8 engineers total) from requirements gathering through production deployment.
+        Earlier, I spearheaded a pharmacy management solution adopted pharmacies. Now, after
+        completing a Master of Software Engineering, I'm applying that architecture and leadership depth
+        to the modern full-stack and AI-native stack, targeting mid-level roles in New Zealand where I can
+        contribute beyond my title.
+      </p>
+
+      <ul class="project-highlights">
+        <li>Architected scalable POS systems handling high transaction volumes, maintaining 90%+ uptime for enterprise clients</li>
+        <li>Integrated EFT payment terminals (Castles, Ingenico) with POS systems for bank card and e-wallet payments, maintaining PCI-DSS compliance</li>
+        <li>Adapted an existing POS product for a petrol station client, integrating a third-party forecourt controller to bridge POS-to-pump communication, running issue-free in production for almost a year</li>
+        <li>Led 2 development teams (8 engineers), mentoring juniors and running code reviews</li>
+        <li>Led system design for an enterprise client that grew from 10 to 80+ branches on the platform, translating business requirements into technical solutions</li>
+        <li>Cut deployment time by 60% by introducing Docker and CI/CD</li>
+        <li>Reduced database query execution time by 40% through optimisation</li>
+      </ul>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-contact">
+      <h2 class="section-title">Let's talk</h2>
+      <p class="section-sub">Open to mid-level Full-Stack, Backend, Cloud, and AI Engineering roles in New Zealand.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:allanperasmo@gmail.com">allanperasmo@gmail.com</a>
+        <a class="btn btn-ghost" href="tel:+64225426295">+64 22 542 6295</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/allanperasmo/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/aperasmo" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Allan Erasmo.</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close image">✕</button>
+    <img id="lightbox-img" alt="" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
