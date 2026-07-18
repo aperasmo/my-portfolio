@@ -1,4 +1,4 @@
-# Portfolio — Allan Erasmo
+# Portfolio - Allan Erasmo
 
 Single-page, static (no build step) professional portfolio. Plain HTML/CSS/JS
 so it loads fast and deploys to GitHub Pages with zero configuration.
