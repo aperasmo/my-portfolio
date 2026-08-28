@@ -49,7 +49,7 @@
           </p>
           <p class="hero-sub">
             Master of Software Engineering graduate, targeting mid-level Full-Stack, Backend, Cloud, or AI Engineering roles.
-            <span class="loc">📍 Auckland, New Zealand</span>
+            <span class="loc">📍 Auckland, New Zealand · 🟢 NZ Work Visa, no sponsorship required</span>
           </p>
           <div class="hero-links">
             <a class="btn btn-primary" href="mailto:allanperasmo@gmail.com">Email me</a>
@@ -94,6 +94,7 @@
           <ul class="tag-list">
             <li>TensorFlow / Keras</li><li>CNN Ensembles</li><li>OpenCV</li>
             <li>Grad-CAM Explainability</li><li>LLM Integration</li>
+            <li>RAG Pipelines</li><li>pgvector / Vector Search</li>
             <li>Tauri</li><li>Rust</li>
           </ul>
         </div>
@@ -103,7 +104,7 @@
     <!-- ================= PROJECTS ================= -->
     <section id="projects" class="section">
       <h2 class="section-title">Featured Projects</h2>
-      <p class="section-sub">Two things I shipped, not prototyped.</p>
+      <p class="section-sub">Things I shipped, not prototyped.</p>
 
       <div class="projects-grid">
 
@@ -165,6 +166,58 @@
           </div>
         </article>
 
+        <!-- Waypoint -->
+        <article class="project-card" data-accent="waypoint">
+          <div class="project-head">
+            <img class="project-icon" src="assets/icons/waypoint-icon.png" alt="" />
+            <div>
+              <h3>Waypoint</h3>
+              <p class="project-tagline">Citation-grounded RAG assistant for NZ immigration policy</p>
+            </div>
+            <span class="badge badge-version">In Development</span>
+          </div>
+
+          <ul class="project-highlights">
+            <li>Built a Retrieval-Augmented Generation system over the Immigration New Zealand Operational Manual, answering questions with citations to specific manual sections instead of generating personalized advice</li>
+            <li>Backend: FastAPI, async SQLAlchemy, PostgreSQL with pgvector for embeddings, and OpenAI for citation-grounded generation</li>
+            <li>Frontend: React 19, Vite, and Tailwind CSS 4</li>
+            <li>Designed structure-aware chunking and update handling for a large, regularly-changing regulatory document set, with distinct fallback paths for out-of-coverage topics versus questions needing live external data</li>
+            <li>Enforces an evidence-only design constraint at both the prompt and product level, plus an anonymous feedback pipeline to flag gaps in corpus coverage</li>
+          </ul>
+
+          <div class="project-gallery" id="gallery-waypoint" hidden></div>
+
+          <div class="project-links">
+            <a class="btn btn-primary btn-sm" href="https://github.com/aperasmo/waypoint" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </article>
+
+        <!-- TerminalMate -->
+        <article class="project-card" data-accent="terminalmate">
+          <div class="project-head">
+            <img class="project-icon" src="assets/icons/terminal-mate-icon.png" alt="" />
+            <div>
+              <h3>TerminalMate</h3>
+              <p class="project-tagline">Safety-first desktop terminal workspace with AI command planning</p>
+            </div>
+            <span class="badge badge-version">In Development</span>
+          </div>
+
+          <ul class="project-highlights">
+            <li>Desktop terminal workspace built with Tauri, React, TypeScript, and Rust, organizing projects, terminal sessions, WSL environments, remote hosts, and containers in one app</li>
+            <li>Turns plain-English requests into environment-aware command plans, with deterministic safety checks and approval gates before any mutating or high-risk command runs</li>
+            <li>Rust-native sidecar architecture, requiring no bundled Python or Node.js runtime for command execution</li>
+            <li>Automated test coverage for command parsing, terminal transcript handling, and timestamp logic via dedicated test scripts</li>
+            <li>Designed for developers, students, and DevOps users moving between shells, projects, and remote or cloud environments</li>
+          </ul>
+
+          <div class="project-gallery" id="gallery-terminal-mate" hidden></div>
+
+          <div class="project-links">
+            <a class="btn btn-primary btn-sm" href="https://github.com/aperasmo/terminal-mate" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -192,7 +245,7 @@
 
       <p class="background-copy">
         Software engineer with 13+ years in enterprise backend systems, combining hands-on development, 
-        systems architecture, and team leadership. At iRipple, led two development teams (8 engineers total, 2019-2025) 
+        systems architecture, and team leadership. At iRipple, led two development teams (8 engineers total, 2018-2025) 
         building and maintaining high-availability POS platforms for 50+ retail clients across the Philippines and Malaysia,
         including leading the migration of a legacy VB6 client onto a cloud-ready .NET platform with offline-capable data sync,
         and earlier, adapting the core POS product into a pharmacy management system for a new retail vertical.
@@ -218,7 +271,7 @@
     <!-- ================= CONTACT ================= -->
     <section id="contact" class="section section-contact">
       <h2 class="section-title">Let's talk</h2>
-      <p class="section-sub">Open to mid-level Full-Stack, Backend, Cloud, and AI Engineering roles in New Zealand.</p>
+      <p class="section-sub">Open to mid-level Full-Stack, Backend, Cloud, and AI Engineering roles in New Zealand. Holds a New Zealand Post-Study Work Visa, full-time work rights, no employer sponsorship required.</p>
       <div class="contact-links">
         <a class="btn btn-primary" href="mailto:allanperasmo@gmail.com">allanperasmo@gmail.com</a>
         <a class="btn btn-ghost" href="tel:+64225426295">+64 22 542 6295</a>

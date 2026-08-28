@@ -97,6 +97,8 @@
 
   buildGallery("gallery-glaucoma-ai", "glaucoma-ai");
   buildGallery("gallery-ai-git-assistant", "ai-git-assistant");
+  buildGallery("gallery-waypoint", "waypoint");
+  buildGallery("gallery-terminal-mate", "terminal-mate");
 
   /* ---------- Lightbox ---------- */
   var lightbox = document.getElementById("lightbox");

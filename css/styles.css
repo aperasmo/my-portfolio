@@ -248,6 +248,7 @@ h1, h2, h3 { margin: 0; line-height: 1.15; }
   background: var(--accent);
 }
 .project-card[data-accent="gitassist"] .project-highlights li::before { background: var(--accent-2); }
+.project-card[data-accent="terminalmate"] .project-highlights li::before { background: var(--accent-2); }
 
 .project-gallery {
   display: grid;
