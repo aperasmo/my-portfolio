@@ -143,7 +143,7 @@
               <h3>AI Git Assistant</h3>
               <p class="project-tagline">Plain-English Git client for safer desktop workflows</p>
             </div>
-            <span class="badge badge-version">v0.9.0</span>
+            <span class="badge badge-version">Actively Maintained</span>
           </div>
 
           <ul class="project-highlights">
@@ -174,21 +174,23 @@
               <h3>Waypoint</h3>
               <p class="project-tagline">Citation-grounded RAG assistant for NZ immigration policy</p>
             </div>
-            <span class="badge badge-version">In Development</span>
+            <span class="badge badge-live">Live</span>
           </div>
 
           <ul class="project-highlights">
-            <li>Built a Retrieval-Augmented Generation system over the Immigration New Zealand Operational Manual, answering questions with citations to specific manual sections instead of generating personalized advice</li>
-            <li>Backend: FastAPI, async SQLAlchemy, PostgreSQL with pgvector for embeddings, and OpenAI for citation-grounded generation</li>
-            <li>Frontend: React 19, Vite, and Tailwind CSS 4</li>
-            <li>Designed structure-aware chunking and update handling for a large, regularly-changing regulatory document set, with distinct fallback paths for out-of-coverage topics versus questions needing live external data</li>
-            <li>Enforces an evidence-only design constraint at both the prompt and product level, plus an anonymous feedback pipeline to flag gaps in corpus coverage</li>
+            <li>Designed and built Waypoint, a production-oriented AI application leveraging Retrieval-Augmented Generation (RAG) to answer New Zealand immigration questions from a controlled Immigration New Zealand Operational Manual corpus, combining LLM reasoning with explicit citations, evidence-status handling, and source boundaries to reduce unsupported answers</li>
+            <li>Engineered an AI retrieval pipeline using PostgreSQL, pgvector, OpenAI embeddings, PostgreSQL full-text search and Reciprocal Rank Fusion (RRF), combining semantic and lexical retrieval to provide higher-quality context to the language model rather than relying on vector similarity alone</li>
+            <li>Built an evidence-aware AI decision layer that determines whether retrieved evidence is sufficient, a corpus_gap, or requires an external_source, allowing the LLM to answer only within supported evidence boundaries and surface uncertainty when the corpus is inadequate</li>
+            <li>Implemented the full AI-enabled application stack using FastAPI, async SQLAlchemy, PostgreSQL/pgvector, OpenAI models, React 19, Vite, Tailwind CSS and shadcn/Base UI, with Dockerised services, responsive citation-driven UX, Browse functionality, API integration, security controls and Azure deployment</li>
+            <li>Created a reproducible AI/RAG evaluation workflow instead of relying on subjective prompt testing, auditing a corpus of 125 substantive sections / 202 chunks and validating retrieval and answer behaviour against a 25-question benchmark, achieving 25/25 expected citations in final browser regression testing, zero fabricated citations and zero frontend runtime errors</li>
+            <li>Applied production AI engineering practices throughout the project, including deterministic validation around LLM outputs, separation of runtime and evaluation data, regression testing, prompt and retrieval evaluation, source-provenance controls, incremental corpus synchronisation, security-conscious deployment and documented architectural decisions</li>
           </ul>
 
           <div class="project-gallery" id="gallery-waypoint" hidden></div>
 
           <div class="project-links">
-            <a class="btn btn-primary btn-sm" href="https://github.com/aperasmo/waypoint" target="_blank" rel="noopener">View Code</a>
+            <a class="btn btn-primary btn-sm" href="https://waypoint.aperasmo.com" target="_blank" rel="noopener">View Live Site</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/aperasmo/waypoint" target="_blank" rel="noopener">View Code</a>
           </div>
         </article>
 
@@ -200,15 +202,16 @@
               <h3>TerminalMate</h3>
               <p class="project-tagline">Safety-first desktop terminal workspace with AI command planning</p>
             </div>
-            <span class="badge badge-version">In Development</span>
+            <span class="badge badge-version">Actively Maintained</span>
           </div>
 
           <ul class="project-highlights">
-            <li>Desktop terminal workspace built with Tauri, React, TypeScript, and Rust, organizing projects, terminal sessions, WSL environments, remote hosts, and containers in one app</li>
-            <li>Turns plain-English requests into environment-aware command plans, with deterministic safety checks and approval gates before any mutating or high-risk command runs</li>
-            <li>Rust-native sidecar architecture, requiring no bundled Python or Node.js runtime for command execution</li>
-            <li>Automated test coverage for command parsing, terminal transcript handling, and timestamp logic via dedicated test scripts</li>
-            <li>Designed for developers, students, and DevOps users moving between shells, projects, and remote or cloud environments</li>
+            <li>Built an AI-powered, safety-first desktop terminal assistant that translates plain-English intent into executable commands while preserving user review and approval for sensitive operations</li>
+            <li>Designed persistent PowerShell and WSL sessions so AI-generated commands retain variables, working directories, multiline expressions, and real terminal behavior</li>
+            <li>Created workspace-specific Windows/WSL environments with AI-guided command planning, live output streaming, execution history, elapsed-time tracking, and contextual error recovery</li>
+            <li>Added AI-assisted developer and DevOps workflows across Python, Docker, GitHub CLI, Azure CLI, AWS CLI, Terraform, file operations, and process diagnostics</li>
+            <li>Implemented deterministic safeguards around AI-generated actions, including risk classification, secret masking, sequential queues, explicit approvals, and stop-on-failure controls</li>
+            <li>Engineered with Tauri, Rust, React, TypeScript, and Python/FastAPI, leveraging AI throughout architecture validation, implementation, testing, debugging, and UX refinement while retaining ownership of product strategy, system design, safety policies, and engineering decisions</li>
           </ul>
 
           <div class="project-gallery" id="gallery-terminal-mate" hidden></div>

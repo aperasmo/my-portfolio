@@ -330,13 +330,21 @@ h1, h2, h3 { margin: 0; line-height: 1.15; }
   place-items: center;
   z-index: 50;
   padding: 40px;
+  overflow: auto;
 }
 .lightbox[hidden] { display: none; }
+.lightbox.zoomed { align-items: start; justify-items: start; }
 .lightbox img {
   max-width: min(92vw, 1100px);
   max-height: 88vh;
   border-radius: 10px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  cursor: zoom-in;
+}
+.lightbox img.zoomed {
+  max-width: none;
+  max-height: none;
+  cursor: zoom-out;
 }
 .lightbox-close {
   position: absolute;

@@ -60,9 +60,9 @@
   });
 
   /* ---------- Project screenshot galleries ----------
-     Drop numbered files (1.png, 2.jpg, ... up to 6) into
+     Drop numbered files (1.png, 2.jpg, ... up to 9) into
      assets/screenshots/<project>/ and they appear automatically. */
-  var SLOTS = [1, 2, 3, 4, 5, 6];
+  var SLOTS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   function buildGallery(containerId, folder) {
     var candidates = [];
@@ -107,15 +107,26 @@
 
   function openLightbox(src) {
     lightboxImg.src = src;
+    lightboxImg.classList.remove("zoomed");
+    lightbox.classList.remove("zoomed");
     lightbox.hidden = false;
   }
   function closeLightbox() {
     lightbox.hidden = true;
     lightboxImg.removeAttribute("src");
+    lightboxImg.classList.remove("zoomed");
+    lightbox.classList.remove("zoomed");
   }
   lightboxClose.addEventListener("click", closeLightbox);
   lightbox.addEventListener("click", function (e) {
     if (e.target === lightbox) closeLightbox();
+  });
+  lightboxImg.addEventListener("click", function (e) {
+    e.stopPropagation();
+    lightboxImg.classList.toggle("zoomed");
+    lightbox.classList.toggle("zoomed");
+    lightbox.scrollTop = 0;
+    lightbox.scrollLeft = 0;
   });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
